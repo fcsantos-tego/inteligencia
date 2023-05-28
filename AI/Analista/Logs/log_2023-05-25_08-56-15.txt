@@ -1,0 +1,10 @@
+Data e Hora da Geração: 2023-05-25 08:56:15.921317
+Nome da Empresa: VERZANI & SANDRINI LTDA 01-38
+CNPJ da Empresa: 57.559.387/0001-38
+Competência Analisada: 01/10/2022
+A data 01/10/2022 é anterior ou está dentro do período de vigência do documento? , Sim, a data 01/10/2022 está dentro do período de vigência do documento.
+A empresa identificada encontra-se em situação regular? , Sim.
+A razão social informada no documento indica corresponder a VERZANI & SANDRINI LTDA 01-38? , Não. O documento indica que a razão social é VERZANI E SANDRINI SA, não sendo possível afirmar que se trata da empresa VERZANI & SANDRINI LTDA 01-38.
+A inscrição informada corresponde ao 57.559.387/0001-38? , Sim.
+Total de tokens utilizados: 1739
+O custo total foi de 0.0034779999999999998 centavos de dólar

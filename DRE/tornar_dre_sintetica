@@ -1,0 +1,250 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "ef51a5a0-cdfe-4513-9e89-853050e5918a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "C:\\Users\\fcsantos\\Anaconda3\\lib\\site-packages\\openpyxl\\reader\\excel.py:228: UserWarning: Conditional Formatting extension is not supported and will be removed\n",
+      "  ws_parser.bind_all()\n",
+      "C:\\Users\\fcsantos\\Anaconda3\\lib\\site-packages\\openpyxl\\reader\\excel.py:228: UserWarning: Data Validation extension is not supported and will be removed\n",
+      "  ws_parser.bind_all()\n",
+      "C:\\Users\\fcsantos\\Anaconda3\\lib\\site-packages\\openpyxl\\reader\\excel.py:228: UserWarning: Slicer List extension is not supported and will be removed\n",
+      "  ws_parser.bind_all()\n"
+     ]
+    },
+    {
+     "ename": "KeyboardInterrupt",
+     "evalue": "",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp\\ipykernel_25560\\3176122195.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     14\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     15\u001b[0m     \u001b[1;31m# Percorra cada célula na aba\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 16\u001b[1;33m     \u001b[1;32mfor\u001b[0m \u001b[0mrow\u001b[0m \u001b[1;32min\u001b[0m \u001b[0msheet\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0miter_rows\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     17\u001b[0m         \u001b[1;32mfor\u001b[0m \u001b[0mcell\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mrow\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     18\u001b[0m             \u001b[1;31m# Se a célula contém um valor numérico, substitua-o por um número aleatório\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\openpyxl\\worksheet\\worksheet.py\u001b[0m in \u001b[0;36m_cells_by_row\u001b[1;34m(self, min_col, min_row, max_col, max_row, values_only)\u001b[0m\n\u001b[0;32m    448\u001b[0m                 \u001b[1;32myield\u001b[0m \u001b[0mtuple\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mcell\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mvalue\u001b[0m \u001b[1;32mfor\u001b[0m \u001b[0mcell\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mcells\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    449\u001b[0m             \u001b[1;32melse\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 450\u001b[1;33m                 \u001b[1;32myield\u001b[0m \u001b[0mtuple\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mcells\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    451\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    452\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\openpyxl\\worksheet\\worksheet.py\u001b[0m in \u001b[0;36m<genexpr>\u001b[1;34m(.0)\u001b[0m\n\u001b[0;32m    444\u001b[0m     \u001b[1;32mdef\u001b[0m \u001b[0m_cells_by_row\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mmin_col\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mmin_row\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mmax_col\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mmax_row\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mvalues_only\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mFalse\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    445\u001b[0m         \u001b[1;32mfor\u001b[0m \u001b[0mrow\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mmin_row\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mmax_row\u001b[0m \u001b[1;33m+\u001b[0m \u001b[1;36m1\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 446\u001b[1;33m             \u001b[0mcells\u001b[0m \u001b[1;33m=\u001b[0m \u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mcell\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mrow\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mrow\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mcolumn\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mcolumn\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;32mfor\u001b[0m \u001b[0mcolumn\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mmin_col\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mmax_col\u001b[0m \u001b[1;33m+\u001b[0m \u001b[1;36m1\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    447\u001b[0m             \u001b[1;32mif\u001b[0m \u001b[0mvalues_only\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    448\u001b[0m                 \u001b[1;32myield\u001b[0m \u001b[0mtuple\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mcell\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mvalue\u001b[0m \u001b[1;32mfor\u001b[0m \u001b[0mcell\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mcells\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\openpyxl\\worksheet\\worksheet.py\u001b[0m in \u001b[0;36mcell\u001b[1;34m(self, row, column, value)\u001b[0m\n\u001b[0;32m    238\u001b[0m             \u001b[1;32mraise\u001b[0m \u001b[0mValueError\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Row or column values must be at least 1\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    239\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 240\u001b[1;33m         \u001b[0mcell\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_get_cell\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mrow\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mcolumn\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    241\u001b[0m         \u001b[1;32mif\u001b[0m \u001b[0mvalue\u001b[0m \u001b[1;32mis\u001b[0m \u001b[1;32mnot\u001b[0m \u001b[1;32mNone\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    242\u001b[0m             \u001b[0mcell\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mvalue\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mvalue\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\openpyxl\\worksheet\\worksheet.py\u001b[0m in \u001b[0;36m_get_cell\u001b[1;34m(self, row, column)\u001b[0m\n\u001b[0;32m    254\u001b[0m         \u001b[0mcoordinate\u001b[0m \u001b[1;33m=\u001b[0m \u001b[1;33m(\u001b[0m\u001b[0mrow\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mcolumn\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    255\u001b[0m         \u001b[1;32mif\u001b[0m \u001b[1;32mnot\u001b[0m \u001b[0mcoordinate\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_cells\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 256\u001b[1;33m             \u001b[0mcell\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mCell\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mrow\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mrow\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mcolumn\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mcolumn\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    257\u001b[0m             \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_add_cell\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mcell\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    258\u001b[0m         \u001b[1;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_cells\u001b[0m\u001b[1;33m[\u001b[0m\u001b[0mcoordinate\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\openpyxl\\cell\\cell.py\u001b[0m in \u001b[0;36m__init__\u001b[1;34m(self, worksheet, row, column, value, style_array)\u001b[0m\n\u001b[0;32m    103\u001b[0m                  )\n\u001b[0;32m    104\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 105\u001b[1;33m     \u001b[1;32mdef\u001b[0m \u001b[0m__init__\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mworksheet\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mrow\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mNone\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mcolumn\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mNone\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mvalue\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mNone\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mstyle_array\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mNone\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    106\u001b[0m         \u001b[0msuper\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mCell\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m__init__\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mworksheet\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mstyle_array\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    107\u001b[0m         \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mrow\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mrow\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mKeyboardInterrupt\u001b[0m: "
+     ]
+    }
+   ],
+   "source": [
+    "from openpyxl import load_workbook\n",
+    "import random\n",
+    "\n",
+    "# Carregue a planilha\n",
+    "wb = load_workbook(r\"C:\\Users\\fcsantos\\OneDrive - BERNHOEFT CONTADORES ASSOCIADOS LTDA\\_Inteligência_Empresarial\\RAR\\DRE\\tratamento_dres_alterado\\DRE_04.2023.xlsx\")\n",
+    "\n",
+    "# Lista das abas que você deseja alterar\n",
+    "abas = ['Acomp Performance', 'Mensal_Células', 'Semestral_Células', 'Anual_Células', 'Anual_GRT', 'TD_CID Colaborador', 'TD_CID Mensal', 'TD_Prod', 'App', 'Produzido', 'CID', 'CID_Enc Custos', 'CID_Rateios', 'HE_Bonus_Dissídio', 'Outros Custos Diretos', 'Tipo de serviço']\n",
+    "\n",
+    "# Percorra cada aba na lista\n",
+    "for aba in abas:\n",
+    "    # Selecione a aba\n",
+    "    sheet = wb[aba]\n",
+    "\n",
+    "    # Percorra cada célula na aba\n",
+    "    for row in sheet.iter_rows():\n",
+    "        for cell in row:\n",
+    "            # Se a célula contém um valor numérico, substitua-o por um número aleatório\n",
+    "            if isinstance(cell.value, (int, float)):\n",
+    "                cell.value = random.random()\n",
+    "\n",
+    "# Salve a planilha\n",
+    "wb.save(r\"C:\\Users\\fcsantos\\OneDrive - BERNHOEFT CONTADORES ASSOCIADOS LTDA\\_Inteligência_Empresarial\\RAR\\DRE\\tratamento_dres_alterado\\sintética\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "e9b6c258-fc90-4d1d-82f6-87049e3ddd5d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Carregando a planilha...\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "C:\\Users\\fcsantos\\Anaconda3\\lib\\site-packages\\openpyxl\\reader\\excel.py:228: UserWarning: Conditional Formatting extension is not supported and will be removed\n",
+      "  ws_parser.bind_all()\n",
+      "C:\\Users\\fcsantos\\Anaconda3\\lib\\site-packages\\openpyxl\\reader\\excel.py:228: UserWarning: Data Validation extension is not supported and will be removed\n",
+      "  ws_parser.bind_all()\n",
+      "C:\\Users\\fcsantos\\Anaconda3\\lib\\site-packages\\openpyxl\\reader\\excel.py:228: UserWarning: Slicer List extension is not supported and will be removed\n",
+      "  ws_parser.bind_all()\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Processando aba Acomp Performance...\n",
+      "Processando aba Mensal_Células...\n",
+      "Processando aba Semestral_Células...\n",
+      "Processando aba Anual_Células...\n",
+      "Processando aba Anual_GRT...\n",
+      "Processando aba TD_CID Colaborador...\n",
+      "Processando aba TD_CID Mensal...\n",
+      "Processando aba TD_Prod...\n",
+      "Processando aba App...\n",
+      "Processando aba Produzido...\n",
+      "Processando aba CID...\n",
+      "Processando aba CID_Enc Custos...\n",
+      "Processando aba CID_Rateios...\n",
+      "Processando aba HE_Bonus_Dissídio...\n",
+      "Processando aba Outros Custos Diretos...\n",
+      "Processando aba Tipo de serviço...\n",
+      "Salvando a planilha...\n"
+     ]
+    },
+    {
+     "ename": "PermissionError",
+     "evalue": "[Errno 13] Permission denied: 'C:\\\\Users\\\\fcsantos\\\\OneDrive - BERNHOEFT CONTADORES ASSOCIADOS LTDA\\\\_Inteligência_Empresarial\\\\RAR\\\\DRE\\\\tratamento_dres_alterado\\\\sintética'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mPermissionError\u001b[0m                           Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp\\ipykernel_4128\\2183256450.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     25\u001b[0m \u001b[1;31m# Salve a planilha\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     26\u001b[0m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Salvando a planilha...\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 27\u001b[1;33m \u001b[0mwb\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0msave\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34mr\"C:\\Users\\fcsantos\\OneDrive - BERNHOEFT CONTADORES ASSOCIADOS LTDA\\_Inteligência_Empresarial\\RAR\\DRE\\tratamento_dres_alterado\\sintética\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     28\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     29\u001b[0m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"Concluído!\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\openpyxl\\workbook\\workbook.py\u001b[0m in \u001b[0;36msave\u001b[1;34m(self, filename)\u001b[0m\n\u001b[0;32m    405\u001b[0m         \u001b[1;32mif\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mwrite_only\u001b[0m \u001b[1;32mand\u001b[0m \u001b[1;32mnot\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mworksheets\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    406\u001b[0m             \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mcreate_sheet\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 407\u001b[1;33m         \u001b[0msave_workbook\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mfilename\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    408\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    409\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\openpyxl\\writer\\excel.py\u001b[0m in \u001b[0;36msave_workbook\u001b[1;34m(workbook, filename)\u001b[0m\n\u001b[0;32m    289\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    290\u001b[0m     \"\"\"\n\u001b[1;32m--> 291\u001b[1;33m     \u001b[0marchive\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mZipFile\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mfilename\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m'w'\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mZIP_DEFLATED\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mallowZip64\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mTrue\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    292\u001b[0m     \u001b[0mwriter\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mExcelWriter\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mworkbook\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0marchive\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    293\u001b[0m     \u001b[0mwriter\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0msave\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\zipfile.py\u001b[0m in \u001b[0;36m__init__\u001b[1;34m(self, file, mode, compression, allowZip64, compresslevel, strict_timestamps)\u001b[0m\n\u001b[0;32m   1246\u001b[0m             \u001b[1;32mwhile\u001b[0m \u001b[1;32mTrue\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1247\u001b[0m                 \u001b[1;32mtry\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 1248\u001b[1;33m                     \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mfp\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mio\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mopen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mfile\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mfilemode\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   1249\u001b[0m                 \u001b[1;32mexcept\u001b[0m \u001b[0mOSError\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1250\u001b[0m                     \u001b[1;32mif\u001b[0m \u001b[0mfilemode\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mmodeDict\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mPermissionError\u001b[0m: [Errno 13] Permission denied: 'C:\\\\Users\\\\fcsantos\\\\OneDrive - BERNHOEFT CONTADORES ASSOCIADOS LTDA\\\\_Inteligência_Empresarial\\\\RAR\\\\DRE\\\\tratamento_dres_alterado\\\\sintética'"
+     ]
+    }
+   ],
+   "source": [
+    "from openpyxl import load_workbook\n",
+    "import random\n",
+    "\n",
+    "# Carregue a planilha\n",
+    "print(\"Carregando a planilha...\")\n",
+    "wb = load_workbook(r\"C:\\Users\\fcsantos\\OneDrive - BERNHOEFT CONTADORES ASSOCIADOS LTDA\\_Inteligência_Empresarial\\RAR\\DRE\\tratamento_dres_alterado\\DRE_04.2023.xlsx\")\n",
+    "\n",
+    "# Lista das abas que você deseja alterar\n",
+    "abas = ['Acomp Performance', 'Mensal_Células', 'Semestral_Células', 'Anual_Células', 'Anual_GRT', 'TD_CID Colaborador', 'TD_CID Mensal', 'TD_Prod', 'App', 'Produzido', 'CID', 'CID_Enc Custos', 'CID_Rateios', 'HE_Bonus_Dissídio', 'Outros Custos Diretos', 'Tipo de serviço']\n",
+    "\n",
+    "# Percorra cada aba na lista\n",
+    "for aba in abas:\n",
+    "    # Selecione a aba\n",
+    "    print(f\"Processando aba {aba}...\")\n",
+    "    sheet = wb[aba]\n",
+    "\n",
+    "    # Percorra cada linha na aba\n",
+    "    for row in sheet.iter_rows():\n",
+    "        # Percorra cada célula na linha\n",
+    "        for cell in row:\n",
+    "            # Se a célula contém um valor numérico, substitua-o por um número aleatório\n",
+    "            if isinstance(cell.value, (int, float)):\n",
+    "                cell.value = random.random()\n",
+    "\n",
+    "# Salve a planilha\n",
+    "print(\"Salvando a planilha...\")\n",
+    "wb.save(r\"C:\\Users\\fcsantos\\OneDrive - BERNHOEFT CONTADORES ASSOCIADOS LTDA\\_Inteligência_Empresarial\\RAR\\DRE\\tratamento_dres_alterado\\sintética\")\n",
+    "\n",
+    "print(\"Concluído!\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "031d0c2d-f914-40a2-b6a2-07b1d31b98bb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Processando aba Acomp Performance...\n"
+     ]
+    },
+    {
+     "ename": "KeyboardInterrupt",
+     "evalue": "",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp\\ipykernel_4128\\2477967919.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     17\u001b[0m     \u001b[1;32mfor\u001b[0m \u001b[0mcell\u001b[0m \u001b[1;32min\u001b[0m \u001b[0msheet\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mused_range\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     18\u001b[0m         \u001b[1;31m# Se a célula contém um valor numérico e não uma fórmula, substitua-o por um número aleatório\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 19\u001b[1;33m         \u001b[1;32mif\u001b[0m \u001b[0mcell\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mvalue\u001b[0m \u001b[1;32mis\u001b[0m \u001b[1;32mnot\u001b[0m \u001b[1;32mNone\u001b[0m \u001b[1;32mand\u001b[0m \u001b[0misinstance\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mcell\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mvalue\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m(\u001b[0m\u001b[0mint\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mfloat\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;32mand\u001b[0m \u001b[0mcell\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mformula\u001b[0m \u001b[1;33m==\u001b[0m \u001b[1;34m''\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     20\u001b[0m             \u001b[0mcell\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mvalue\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mrandom\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mrandom\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     21\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\xlwings\\main.py\u001b[0m in \u001b[0;36mvalue\u001b[1;34m(self)\u001b[0m\n\u001b[0;32m   2306\u001b[0m                  \u001b[0msee\u001b[0m \u001b[1;33m:\u001b[0m\u001b[0mmeth\u001b[0m\u001b[1;33m:\u001b[0m\u001b[0;31m`\u001b[0m\u001b[0mxlwings\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mRange\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0moptions\u001b[0m\u001b[0;31m`\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   2307\u001b[0m         \"\"\"\n\u001b[1;32m-> 2308\u001b[1;33m         \u001b[1;32mreturn\u001b[0m \u001b[0mconversion\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mread\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;32mNone\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_options\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   2309\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   2310\u001b[0m     \u001b[1;33m@\u001b[0m\u001b[0mvalue\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0msetter\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\xlwings\\conversion\\__init__.py\u001b[0m in \u001b[0;36mread\u001b[1;34m(rng, value, options)\u001b[0m\n\u001b[0;32m     52\u001b[0m     \u001b[0mconvert\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0moptions\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mget\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"convert\"\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;32mNone\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     53\u001b[0m     \u001b[0mpipeline\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0maccessors\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mget\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mconvert\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mconvert\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mreader\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0moptions\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 54\u001b[1;33m     \u001b[0mctx\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mConversionContext\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mrng\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mrng\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mvalue\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mvalue\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     55\u001b[0m     \u001b[0mpipeline\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mctx\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     56\u001b[0m     \u001b[1;32mreturn\u001b[0m \u001b[0mctx\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mvalue\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\xlwings\\conversion\\framework.py\u001b[0m in \u001b[0;36m__init__\u001b[1;34m(self, rng, value)\u001b[0m\n\u001b[0;32m      8\u001b[0m         \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mrange\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mrng\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      9\u001b[0m         \u001b[1;31m# rng can only be None if used via UDFs\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 10\u001b[1;33m         \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mengine\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mrng\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0msheet\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mbook\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mapp\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mengine\u001b[0m \u001b[1;32mif\u001b[0m \u001b[0mrng\u001b[0m \u001b[1;32melse\u001b[0m \u001b[0mxlwings\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mengines\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m\"excel\"\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     11\u001b[0m         \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mvalue\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mvalue\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     12\u001b[0m         \u001b[1;31m# used for markdown (could be replaced by handing the parsed ast from\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\xlwings\\main.py\u001b[0m in \u001b[0;36msheet\u001b[1;34m(self)\u001b[0m\n\u001b[0;32m   1822\u001b[0m         \u001b[1;33m.\u001b[0m\u001b[1;33m.\u001b[0m \u001b[0mversionadded\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m:\u001b[0m \u001b[1;36m0.9\u001b[0m\u001b[1;36m.0\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1823\u001b[0m         \"\"\"\n\u001b[1;32m-> 1824\u001b[1;33m         \u001b[1;32mreturn\u001b[0m \u001b[0mSheet\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mimpl\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mimpl\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0msheet\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   1825\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1826\u001b[0m     \u001b[1;32mdef\u001b[0m \u001b[0m__len__\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\xlwings\\_xlwindows.py\u001b[0m in \u001b[0;36msheet\u001b[1;34m(self)\u001b[0m\n\u001b[0;32m   1105\u001b[0m     \u001b[1;33m@\u001b[0m\u001b[0mproperty\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1106\u001b[0m     \u001b[1;32mdef\u001b[0m \u001b[0msheet\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 1107\u001b[1;33m         \u001b[1;32mreturn\u001b[0m \u001b[0mSheet\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mxl\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mcoords\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m0\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   1108\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1109\u001b[0m     \u001b[1;32mdef\u001b[0m \u001b[0m__len__\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\xlwings\\_xlwindows.py\u001b[0m in \u001b[0;36mcoords\u001b[1;34m(self)\u001b[0m\n\u001b[0;32m   1092\u001b[0m             self._coords = (\n\u001b[0;32m   1093\u001b[0m                 \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mxl\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mWorksheet\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 1094\u001b[1;33m                 \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mxl\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mRow\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   1095\u001b[0m                 \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mxl\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mColumn\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   1096\u001b[0m                 \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mxl\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mRows\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mCount\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m<string>\u001b[0m in \u001b[0;36m__init__\u001b[1;34m(self, *args, **kw)\u001b[0m\n",
+      "\u001b[1;31mKeyboardInterrupt\u001b[0m: "
+     ]
+    }
+   ],
+   "source": [
+    "import xlwings as xw\n",
+    "import random\n",
+    "\n",
+    "# Abra a planilha\n",
+    "wb = xw.Book(r\"C:\\Users\\fcsantos\\OneDrive - BERNHOEFT CONTADORES ASSOCIADOS LTDA\\_Inteligência_Empresarial\\RAR\\DRE\\tratamento_dres_alterado\\DRE_04.2023.xlsx\")\n",
+    "\n",
+    "# Lista das abas que você deseja alterar\n",
+    "abas = ['Acomp Performance', 'Mensal_Células', 'Semestral_Células', 'Anual_Células', 'Anual_GRT', 'TD_CID Colaborador', 'TD_CID Mensal', 'TD_Prod', 'App', 'Produzido', 'CID', 'CID_Enc Custos', 'CID_Rateios', 'HE_Bonus_Dissídio', 'Outros Custos Diretos', 'Tipo de serviço']\n",
+    "\n",
+    "# Percorra cada aba na lista\n",
+    "for aba in abas:\n",
+    "    # Selecione a aba\n",
+    "    print(f\"Processando aba {aba}...\")\n",
+    "    sheet = wb.sheets[aba]\n",
+    "\n",
+    "    # Percorra cada célula na aba\n",
+    "    for cell in sheet.used_range:\n",
+    "        # Se a célula contém um valor numérico e não uma fórmula, substitua-o por um número aleatório\n",
+    "        if cell.value is not None and isinstance(cell.value, (int, float)) and cell.formula == '':\n",
+    "            cell.value = random.random()\n",
+    "\n",
+    "# Salve a planilha\n",
+    "print(\"Salvando a planilha...\")\n",
+    "wb.save(r\"C:\\Users\\fcsantos\\OneDrive - BERNHOEFT CONTADORES ASSOCIADOS LTDA\\_Inteligência_Empresarial\\RAR\\DRE\\tratamento_dres_alterado\\sintética.xlsx\")\n",
+    "\n",
+    "print(\"Concluído!\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "692e7d7c-6e43-490e-b04e-2443a16c161e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
